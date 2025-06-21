@@ -1,0 +1,65 @@
+.drop-box {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.drop-box-idle {
+  border-color: #ced4da;
+  background-color: #ffffff;
+}
+
+.drop-box:hover {
+  border-color: #0d6efd;
+  background-color: #e9f2ff;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.3);
+}
+
+.drop-box-active {
+  border-color: #0d6efd !important;
+  background-color: #e0f0ff;
+  box-shadow: 0 0 12px rgba(13, 110, 253, 0.6);
+}
+
+.drag-page {
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+}
+
+.upload-box {
+  background-color: #ffffff;
+  border-style: dashed;
+}
+
+.drag-active {
+  box-shadow: 0 0 15px rgba(13, 202, 240, 0.4);
+}
+
+.img-preview {
+  animation: fadeIn 0.6s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.success-badge {
+  animation: popIn 0.4s ease-out;
+}
+
+/* @keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} */
